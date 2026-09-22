@@ -1,12 +1,3 @@
-# POS Foundations — CodeIgniter 4
-
-First milestone of a basic Point-of-Sale (POS) system, built for **IT0049 — Web System
-Technologies, Technical Formative Assessment 1: "From Zero to Four Pages."**
-
-Four routed pages built with CodeIgniter 4's MVC layers (routing → controller → view).
-The Customer Accounts and User Accounts pages use a **static PHP array** as a temporary
-data source — no database is wired up yet.
-
 ## Pages
 
 | Route        | Controller            | Description                                   |
@@ -16,42 +7,10 @@ data source — no database is wired up yet.
 | `/customers` | `Customers::index`      | Lists customers (full name, email, phone) from a static array |
 | `/users`     | `Users::index`          | Lists users/staff (username, full name, role) from a static array |
 
-## Requirements
+## Software Used
 
-- PHP 8.1+
-- Composer
-- The PHP extensions CodeIgniter 4 needs: `intl`, `mbstring`
-
-## Setup & Run Locally
-
-1. Clone the repository and move into it:
-   ```bash
-   git clone <your-repo-url>
-   cd myproject
-   ```
-2. Install dependencies:
-   ```bash
-   composer install
-   ```
-3. Create your `.env` file from the example and configure it:
-   ```bash
-   cp env .env
-   ```
-   Then in `.env`, uncomment and set:
-   ```
-   CI_ENVIRONMENT = development
-   app.baseURL = 'http://localhost:8080/'
-   ```
-4. Start the built-in PHP server:
-   ```bash
-   php spark serve
-   ```
-   or
-   ```bash
-   php -S localhost:8080 -t public
-   ```
-5. Visit `http://localhost:8080/` in your browser and use the nav bar to reach
-   About, Customer Accounts, and User Accounts.
+PHP 8.5
+CodeIgniter 4
 
 ## Project Structure Notes
 
