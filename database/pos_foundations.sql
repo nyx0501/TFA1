@@ -14,6 +14,8 @@ CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     full_name VARCHAR(100) NOT NULL,
+    role VARCHAR(50) NOT NULL DEFAULT 'Cashier',
+    avatar VARCHAR(255) NULL DEFAULT NULL,
     created_at DATETIME NOT NULL
 );
 
@@ -25,8 +27,8 @@ INSERT INTO customers (full_name, email, phone, created_at) VALUES
 ('Kristine Bautista', 'kristine.bautista@example.com', '0921-567-8901', NOW());
 
 INSERT INTO users (username, full_name, created_at) VALUES
-('jsmith', 'Joseph Smith', NOW()),
-('aramos', 'Aiza Ramos', NOW()),
-('ptorres', 'Paolo Torres', NOW()),
-('lmendoza', 'Liza Mendoza', NOW()),
-('rvillar', 'Rico Villar', NOW());
+('jsmith', 'Joseph Smith', 'Administrator', NULL, NOW()),
+('aramos', 'Aiza Ramos', 'Cashier', NULL, NOW()),
+('ptorres', 'Paolo Torres', 'Cashier', NULL, NOW()),
+('lmendoza', 'Liza Mendoza', 'Inventory Manager', NULL, NOW()),
+('rvillar', 'Rico Villar', 'Cashier', NULL, NOW());
