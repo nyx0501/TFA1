@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,21 @@
         th { background: #1f2d3d; color: #fff; }
         tr:hover { background: #f0f3f7; }
         .card { background: #fff; padding: 1.5rem; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.toolbar h2 { margin-bottom: 0; }
+.btn { display: inline-block; background: #2f6fed; color: #fff; border: 0; padding: 0.55rem 1.1rem; border-radius: 4px; font-size: 0.95rem; text-decoration: none; cursor: pointer; }
+.btn:hover { background: #1f58c9; }
+.btn-secondary { background: #8a94a3; }
+.btn-secondary:hover { background: #6f7886; }
+.form-group { margin-bottom: 1rem; }
+label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+input[type=text], input[type=email], input[type=file], select { width: 100%; padding: 0.55rem 0.7rem; border: 1px solid #c4ccd6; border-radius: 4px; font-size: 0.95rem; background: #fff; }
+.has-error input, .has-error select { border-color: #c62828; }
+.error { color: #c62828; font-size: 0.85rem; margin-top: 0.3rem; }
+.actions { margin-top: 1.25rem; }
+.avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; background: #e2e6ea; display: block; }
+.avatar-lg { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 0.5rem; display: block; }
+.hint { color: #8a94a3; font-size: 0.8rem; margin-top: 0.25rem; }
         footer { text-align: center; padding: 1.5rem; color: #8a94a3; font-size: 0.85rem; }
     </style>
 </head>
